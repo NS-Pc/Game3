@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Zombie Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Loading-->
+    <div id="loading">
+        <p>Zombie...</p>
+    </div>
+
+
+
+    <!--Play game box-->
+    <div id="playbox">
+        <div id="play">Play</div>
+        <div id="playerskn">Player Style</div>
+        <div id="background">Background Style</div>
+    </div>
+    <!--Main Game Box-->
+    <div id="game">
+   
+        <p class="time">Time : <samp id="time">0</samp></p>
+                <p class="kill">Kill : <samp id="kill">0</samp></p>
+                     <!--Game Box-->
+        <div id="gamebox">
+            <!--player-->
+            <div id="player"></div>
+        </div>
+    </div>
+    <!--GameOver-->
+    <div id="gameover">
+        <img src="images/playergameimage.jpg">
+        <h1>GameOver</h1>
+        <p>Zombie Kill : <samp id="Kill">0</samp></p>
+        <div id="reset">Reset</div>
+    </div>
+
+    <div id="boxPlayer">
+        <p id="cl">X</p>
+        <div class="boximg"><img src="images/player1.png" id="img1" alt=""></div>
+        <div class="boximg"> <img src="images/player2.png" alt="" id="img2"></div>
+        <div class="boximg"> <img src="images/player3.png" alt="" id="img3"></div>
+    </div>
+    <div id="back">
+        <p id="clo">X</p>
+        <div id="b"><img src="images/background.gif" alt=""></div>
+        <div id="b"><img src="images/background2.gif" alt=""></div>
+    </div>
+
+
+
+    <!--All Sounds-->
+    <audio src="audios/gun.mp3" id="gun"></audio>
+    <audio src="audios/loop.mp3" id="loop"></audio>
+    <audio src="audios/playimg.mp3" id="imgplay"></audio>
+    <audio src="audios/Gameover.mp3" id="GameOverS"></audio>
+
+
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
